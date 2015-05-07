@@ -1,0 +1,21 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body
+
+{
+		
+	font-family:$typo;
+
+	 @include desktop{
+	 padding-top:217px;
+
+	 }
+	
+
+}
+
+
+
+

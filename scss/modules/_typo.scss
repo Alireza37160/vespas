@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Sport';
+    src: url('font/sports_world-regular-webfont.eot');
+    src: url('font/sports_world-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/sports_world-regular-webfont.woff2') format('woff2'),
+         url('font/sports_world-regular-webfont.woff') format('woff'),
+         url('font/sports_world-regular-webfont.ttf') format('truetype'),
+         url('font/sports_world-regular-webfont.svg#sports_worldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700);
+
+$typo: 'Archivo Narrow', sans-serif;
+$header_typo: 'Sport',arial,serif;

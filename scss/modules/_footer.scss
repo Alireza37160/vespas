@@ -1,0 +1,46 @@
+.footer {
+	
+	padding:20px;
+
+	@include desktop {
+
+		@include container();
+
+		width:100%;
+	}
+
+
+
+}
+
+
+.footer-wrapper {
+	background-color: #448ccb;
+
+	@include desktop {
+
+
+
+	}
+
+
+}
+
+.footer-social {
+
+	@include desktop {
+
+	  text-align:right;
+	}
+
+      text-align:center;
+
+      a{
+       display: inline-block;
+       padding: 20px;
+       color:white;
+       
+
+       
+      }
+}
