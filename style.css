@@ -1945,7 +1945,7 @@ figure a {
 .joueur-item {
   width: 267px;
   background-color: #FFFFFF;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 2px 2px 2px 2px;
   float: left;
   margin: 9.5px;
 }
@@ -1962,13 +1962,13 @@ figure a {
 
 .joueur-item img {
   width: 267px;
-  border-radius: 3px 5px 0 0px;
+  border-radius: 2px 2px 0 0px;
   margin-bottom: 4px;
 }
 @media (min-width: 1024px) {
   .joueur-item img {
     width: 180px;
-    border-radius: 5px 5px 0 0px;
+    border-radius: 2px 2px 0 0px;
     margin-bottom: 4px;
   }
 }
