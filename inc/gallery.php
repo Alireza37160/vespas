@@ -1,7 +1,8 @@
 <?php
 add_filter('post_gallery', 'my_post_gallery', 10, 2);
 
-function my_post_gallery($output, $attr) {
+function my_post_gallery($output, $attr)
+{
     global $post;
 
     if (isset($attr['orderby'])) {
@@ -21,7 +22,7 @@ function my_post_gallery($output, $attr) {
         'size' => 'thumbnail',
         'include' => '',
         'exclude' => ''
-        ), $attr));
+    ), $attr));
 
     $id = intval($id);
     if ('RAND' == $order) $orderby = 'none';
@@ -50,11 +51,10 @@ function my_post_gallery($output, $attr) {
 //      $img = wp_get_attachment_image_src($id, 'my-custom-image-size');
         $img = wp_get_attachment_image_src($id, 'full');
 
-        
-            $output.="<li>";
-            $output.= '<a href="'.$img[0].'" class="gallery-item"><img class="th" src="'.$thumb[0].'"></img></a>';
-            $output.= '</li>';
 
+        $output .= "<li>";
+        $output .= '<a href="' . $img[0] . '" class="gallery-item"><img class="th" src="' . $thumb[0] . '"></img></a>';
+        $output .= '</li>';
 
 
     }
@@ -63,4 +63,5 @@ function my_post_gallery($output, $attr) {
 
     return $output;
 }
+
 ?>

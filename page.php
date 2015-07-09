@@ -1,5 +1,4 @@
 <?php get_header();?>
-
 <main class="main">
 <h1 class="main-title"><?php echo the_title(); ?></h1>
 
