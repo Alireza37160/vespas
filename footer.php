@@ -30,7 +30,9 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.js"></script>
+	<script type="text/javascript" src='<?php echo get_template_directory_uri(); ?>/js/magnific-popup.js'></script>
 	<script type="text/javascript" src='<?php echo get_template_directory_uri(); ?>/js/app.js'></script>
+	
 
 </body>
 </html>

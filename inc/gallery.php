@@ -50,16 +50,11 @@ function my_post_gallery($output, $attr) {
 //      $img = wp_get_attachment_image_src($id, 'my-custom-image-size');
         $img = wp_get_attachment_image_src($id, 'full');
 
-        if ($attr['link'] =='none') {
+        
             $output.="<li>";
-            $output.= '<img class="th" src="'.$thumb[0].'"></img>';
+            $output.= '<a href="'.$img[0].'" class="gallery-item"><img class="th" src="'.$thumb[0].'"></img></a>';
             $output.= '</li>';
 
-        } else {
-            $output.="<li><a href=\"{$img[0]}\" class=\"gallery-item\">";
-            $output .= "<img class=\"th\" src=\"{$thumb[0]}\" width=\"{$thumb[1]}\" height=\"{$thumb[2]}\" alt=\"\" />\n";
-            $output.="</a></li>";
-        }
 
 
     }
