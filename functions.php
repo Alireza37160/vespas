@@ -18,3 +18,14 @@ require_once('inc/partenaires.php');
 require_once('inc/pagination.php');
 
 
+// galerie
+require_once('inc/galerie.php');
+
+// joueur
+require_once('inc/joueur.php');
+
+// sidebar
+require_once('inc/sidebar.php');
+
+// JoueurWidget
+require_once('inc/JoueurWidget.php');

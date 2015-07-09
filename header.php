@@ -20,7 +20,7 @@
 				<a href="<?Php echo get_site_url ('index.php');?>" class="header-logo">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg"  >
 				</a>
-				<h1 class="header-title">VESTAS HANDBALL</h1>
+				<h1 class="header-title">VESPAS HANDBALL</h1>
 			</div>
 
 			

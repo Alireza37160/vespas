@@ -1,50 +1,47 @@
 <?php get_header();?>
 
+<main class="main">
+<h1 class="main-title"><?php echo the_title(); ?></h1>
 
+ <section class="content">
+  <div class="content-wrapper">	
+	<?php while(have_posts()):the_post(); ?>
+		<h2 id="post-title">
+		<a href="#"><?php the_title(); ?></a>
+		</h2>
 
-		<main class="main">
-<h1 class="main-title">Phoenix de Vouillé</h1>
+	<?php the_content();?>
 
+     <?php endwhile; ?>
 
+ </div>
 
+             <div id="widget_sidebar">
 
-            <?php echo slider_show(); ?>
+             <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('Sidebar')); ?>
 
+             
+              </div>
 
-
-
-
-
-
-                          <?php get_sidebar();?>
-
-            	</div>
-            	
-            	</section>
-
+             
+              </div>
+</section>
             	<section class="pagination">
-
-            		<a href="#" class="pagination-prev">
-						Précédent
-            		</a><!--
-            		--><a href="#" class="pagination-next">
-						Suivant
-            		</a> 
+                               
+                 <?php previous_posts_link('< Précédent');?>
+       
+                 <?php next_posts_link('Suivant >');?>
+          
             	</section> 
 
+
 	            <div class="partenaires-wrapper">
-	            	<section class="partenaires">
-	            	  <a class="partenaires-item" href="http://miami.cbslocal.com/category/sports/" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partenaires/cbs-sports-logo.png"></a>
-	            	  <a class="partenaires-item" href="http://fr.wilogo.com/blog/tags/sport?per_page=50" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partenaires/ancien_logo_ffsa.gif"></a>
-	            	  <a class="partenaires-item" href="www.sports-psychology.com" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partenaires/mental_edge_logo-150x150.jpg"></a>
-	            	  <a class="partenaires-item" href="www.agglo-royan-tourisme.com" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partenaires/logo_multisports_modifie_1.jpg"></a>
-	            	  <a class="partenaires-item" href="http://reunion.franceolympique.com/art.php?id=30866" target="blank" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partenaires/logo_sport_sante.jpg"></a> 
-	            	  <a class="partenaires-item" href="http://www.infos.fr/bein-sport-charles-bietry-quitterait-ses-fonctions-11297.html" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/img/partenaires/logo-bein-sport-150x150.jpg"></a>
-	            	  <a class="partenaires-item" href="http://triathlonbordeaux.fr/"><img src="<?php echo get_template_directory_uri(); ?>/img/partenaires/LOGO-BCO-SPORT-150x150.png" target="blank"></a>			
-	            	</section>
+	            	<?php echo partenaires_show(); ?>
 	            </div>
 
-		</main>
+</main>
 
 
-		<?php get_footer();?>
+
+
+<?php get_footer();?>

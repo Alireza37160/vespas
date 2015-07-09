@@ -3,7 +3,8 @@
 
 
 		<main class="main">
-<h1 class="main-title">Phoenix de Vouillé</h1>
+<h1 class="main-title"><?php echo the_title(); ?></h1>
+</h1>
 
 
 
@@ -51,19 +52,16 @@
             		</article>
 
                   <?php endwhile; ?>
-            		
-
-
-            	
-            			
-            	
             			
 	
             	</div>
 
-              <?php get_sidebar();?>
+              <div id="widget_sidebar">
+             <?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('sidebar')) ; ?>
 
-            	</div>
+
+              </div>
+
             	
             	</section>
 
