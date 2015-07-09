@@ -29,3 +29,6 @@ require_once('inc/sidebar.php');
 
 // JoueurWidget
 require_once('inc/JoueurWidget.php');
+
+// galerie
+require_once('inc/gallery.php');
