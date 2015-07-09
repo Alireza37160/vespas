@@ -18,9 +18,6 @@ require_once('inc/partenaires.php');
 require_once('inc/pagination.php');
 
 
-// galerie
-require_once('inc/galerie.php');
-
 // joueur
 require_once('inc/joueur.php');
 
