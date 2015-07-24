@@ -25,9 +25,9 @@ class JoueurWidget extends WP_Widget {
             $joueur->the_post();
             global $post;
 
-       echo  '<h4 class="post-title">Un joueur par hasard</h4>';
+       echo  '<h4 class="post-title subheader">Un joueur par hasard</h4>';
        echo  '<img src="'.wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'joueur' )[0].'">';
-       echo  '<p id="title_joueur_item">'.get_the_title().'</p>';
+       echo '<h4><a href= "' . get_the_permalink() . '" id="title_joueur_item">' . get_the_title() . '</a></h4>';
 
 }
        echo '</div>';

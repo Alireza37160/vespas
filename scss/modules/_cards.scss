@@ -6,17 +6,17 @@
   margin-bottom: 20px;
 
   &:hover {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transform: translate3d(0, -3px, 0);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translate3d(0, -3px, 0);
 
-    .card-bio {
+.card-bio {
       opacity:1;
     }
   }
 }
 
 .card-image {
-  position: relative;
+    position: relative;
 
   img {
     width: 100%;
@@ -24,13 +24,16 @@
 }
 
 .card-bio {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  transition: opacity 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding-left:12px;
+    padding-bottom: 5px;
+    padding-top: 5px;
   p {
     margin: 0;
     padding: 0;
@@ -39,74 +42,58 @@
 }
 
 .card-content {
-  padding: 10px 20px;
+    padding: 10px 20px;
 
 }
 
 .card a {
-  position: relative;
-  height: 303px;
+    position: relative;
+    height: 303px;
 }
 
-.joueur-item img {
-  width: 267px;
-  border-radius: 2px 2px 0 0px;
-  margin-bottom: 4px;
-  @include desktop {
-    width: 180px;
-    border-radius: 2px 2px 0 0px;
-    margin-bottom: 4px;
-  }
-}
 
 #title_joueur_item {
+    color:#888888;
+    &:hover{
+      color: #E1E1E1;}
 
-  color: #686868;
-  font-weight: bold;
+@include desktop{
+    color: #686868;
+    font-weight: bold;
+    &:hover{
+      color: #2B2B2B;
+    }
+
+
+    }
 
 }
 
 .bio_card {
 
-  padding: 0;
+    padding: 0;
 
 }
 
 .h4_bio_card {
-  padding: 0px;
+    padding: 0px;
 }
 
-.joueur-item a {
-  padding: 10px;
-  margin: 0;
-  color: #686868;
+
+.columns:last-child {
+
+  float:left !important;
 }
 
-.joueur-item p {
-  padding: 10px;
-  margin: 0;
-  color: #686868;
+.post-meta{
+
+
+
+
 }
 
-.bio_joueur-item {
-  padding: 3px;
-  background-color: #363636;
-  width: 267px;
-  height: 60px;
-  position: absolute;
-  top: 210px;
-  opacity: 0;
-  transition: all 0.5s;
-  @include desktop {
-    width: 179px;
-    top: 120px;
+.post-meta li{
 
-  }
-}
+  list-style: none;
 
-.bio_joueur-item p {
-  padding: 0px;
-  margin: 0px;
-  color: white;
-  font-size: 12px;
 }

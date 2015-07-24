@@ -36,13 +36,13 @@ function joueurs_show()
 
     if ($joueur->have_posts()) {
 
-        echo '<section class="joueur">';
+        echo '<div class="row joueur">';
 
         while ($joueur->have_posts()) {
             $joueur->the_post();
             global $post;
 
-            echo '<div class="columns small-12 large-4">';
+            echo '<div class="columns small-12 medium-6 large-4">';
             echo '<div class="card">';
             echo '<div class="card-image">';
             echo '<img src="' . wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'joueur')[0] . '">';
@@ -54,14 +54,14 @@ function joueurs_show()
 			</div>';
             echo '</div>';
             echo '<div class="card-content">';
-            echo '<h4><a href= "' . get_the_permalink() . '" id="title_joueur_item">' . get_the_title() . '</a></h4>';
+            echo '<h3 class="subheader"><small><a href= "' . get_the_permalink() . '" id="title_joueur_item">' . get_the_title() . '</a></small></h4>';
             echo '<p>' . substr(get_the_content(), 0, 100) . ' ...</p>';
             echo '</div>';
             echo '</div>';
             echo '</div>';
         }
 
-        echo '</section>';
+        echo '</div>';
 
     }
 

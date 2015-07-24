@@ -1,8 +1,11 @@
 .footer {
-	
-	padding:20px;
+		background-color: #448ccb;
+	}
 
-	@include desktop {
+.footer-wrapper {
+		padding:20px;
+
+	    @include desktop {
 
 		@include container();
 
@@ -10,31 +13,14 @@
 	}
 
 
-
-}
-
-
-.footer-wrapper {
-	background-color: #448ccb;
-
-	@include desktop {
-
-
-
-	}
-
-
 }
 
 .footer-social {
 
-	@include desktop {
-
+	  @include desktop {
 	  text-align:right;
 	}
-
       text-align:center;
-
       a{
        display: inline-block;
        padding: 20px;

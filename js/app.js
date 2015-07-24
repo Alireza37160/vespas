@@ -103,7 +103,34 @@ $(function () {
         }
     });
 
+    // scroll top
+    $('.gotop').on('click', function(event){
+
+        //annule le comportement clic du navigateur
+        event.preventDefault();
+
+
+        $('html,body').animate({
+          scrollTop: 1
+        }, 1500);
+    });
+
+    $(window).on('scroll', function(e){
+        // console.log('je viens de scroll');
+        // $('.flesh').css('opacity', 1);
+        if ($(this).scrollTop() > 2) {
+        $('.flesh').css('opacity', 1);
+    } 
+        else {
+        $('.flesh').css('opacity', 0);
+    }
+        
+    });
+
 });
+
+
+
 
 
 

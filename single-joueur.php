@@ -9,15 +9,58 @@
   <div class="content-wrapper"> 
 
       <?php while(have_posts()):the_post(); ?>
-            <h2 id="post-title">
+            <h2 id="post-title" class="subheader">
             <a href="#"><?php the_title(); ?></a>
             </h2>
                         <figure>
               <a href="#">
                <?php the_post_thumbnail(); ?>
              </a>
-          </figure> 
+
+
+               
+
+          </figure>
+
+
+
+
       <?php the_content();?>
+      <?php $meta_values = get_post_meta( $post->ID);
+
+// echo '<pre>';
+// var_dump($meta_values);
+// echo '</pre>';
+?>
+<table>
+
+<tbody>
+<tr>
+    <td>
+       Date de naissance
+    </td>
+    <td>
+        <?php echo $meta_values['ne'][0]?>
+    </td>
+</tr>
+<tr>
+      <td>
+        Poid
+      </td>
+      <td>
+        <?php echo $meta_values['poid'][0]?> 
+      </td>
+</tr>
+<tr>
+      <td>
+        Taille
+      </td>
+      <td>
+        <?php echo $meta_values['taille'][0]?>
+      </td>
+</tr>
+</tbody>
+</table>
 
       
      <?php endwhile; ?>

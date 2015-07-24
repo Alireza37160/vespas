@@ -1,9 +1,8 @@
 <?php get_header();?>
 
 
-
 		<main class="main">
-<h1 class="main-title"><?php echo the_title(); ?></h1>
+<h1 class="main-title subheader" ><?php echo the_title(); ?></h1>
 </h1>
 
 
@@ -24,11 +23,11 @@
             				</a>
             			</figure>
 
-            			<h2 class="post-title">
+            			<h2 class="post-title subheader">
 						<a href="#"><?php the_title(); ?></a>
 					</h2>
 
-                              <div class="post-meta">
+                        
                                     <span class="post-auteur">
                                           <?php the_author(); ?>
                                     </span>
@@ -38,7 +37,7 @@
                                     <span>     
                                     <?php the_category(' / '); ?>
                                     </span>
-                              </div>
+                              
 
 
 
@@ -78,11 +77,15 @@
                   <?php next_posts_link('Suivant >');?>
 
                         
-            	</section> 
+            	</section>
+            	   
 
 	            <div class="partenaires-wrapper">
-	            	<?php echo partenaires_show(); ?>
+	            	
 	            </div>
+
+              <?php echo partenaires_show(); ?>
+
 
 		</main>
 

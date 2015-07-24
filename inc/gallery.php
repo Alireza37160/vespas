@@ -42,7 +42,8 @@ function my_post_gallery($output, $attr)
     // Here's your actual output, you may customize it to your need
     $output = "";
 
-    $output .= "<ul class=\"zoom-gallery\">\n";
+
+    $output .= '<ul class="zoom-gallery large-block-grid-'.$columns.' small-block-grid-1 medium-block-grid-2">';
 
     // Now you loop through each attachment
     foreach ($attachments as $id => $attachment) {

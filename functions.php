@@ -29,3 +29,7 @@ require_once('inc/JoueurWidget.php');
 
 // galerie
 require_once('inc/gallery.php');
+
+
+
+

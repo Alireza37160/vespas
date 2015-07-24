@@ -14,10 +14,6 @@ function slider_register() {
 		'public' => true
 	];
 
-
-
-
-
 	register_post_type( $post_type, $args );
 }
 

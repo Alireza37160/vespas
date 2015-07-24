@@ -1,8 +1,10 @@
 
 
-<div class="footer-wrapper">
+
 
 	<footer class="footer">
+	<div class="footer-wrapper">
+	  
 		
 			<nav class="footer-social">
 			    <a href="#">
@@ -17,20 +19,25 @@
 				<a href="#">
 				<svg class="icon icon-youtube3"><use xlink:href="#icon-youtube3"></use></svg>
 				    </a>
+
+
 				
 			</nav>
+			</div>
 	
 	</footer>
-</div>
+
 
 
 
 	 <div class="overlay"></div>
+	 <a class="flesh gotop"></a> 
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.js"></script>
 	<script type="text/javascript" src='<?php echo get_template_directory_uri(); ?>/js/magnific-popup.js'></script>
+	<script type="text/javascript" src='<?php echo get_template_directory_uri(); ?>/js/responsive-tables.js'></script>
 	<script type="text/javascript" src='<?php echo get_template_directory_uri(); ?>/js/app.js'></script>
 	
 

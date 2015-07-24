@@ -1,6 +1,6 @@
 .main {
-  padding-top: 60px;
-  @include desktop {
+   padding-top: 60px;
+   @include desktop {
     padding-top: 0;
   }
 }
@@ -21,27 +21,28 @@
   font-size: 1.2em;
   font-weight: 400;
   @include desktop {
-    display: none;
+  display: none;
   }
 }
 
 .content {
-  @include container();
+    @include container();
 }
 
 .content_single {
-  background-color: #DADADA;
-  @include container();
-  figure {
+    background-color: #DADADA;
+    @include container();
+    figure {
     float: none;
     text-align: center;
   }
 }
 
 .content-wrapper {
-  margin-top: 10px;
-  @include clearfix();
-  @include desktop {
+    margin-top: 10px;
+    margin-left:10px;
+    @include clearfix();
+    @include desktop {
     width: 70%;
     float: left;
   }
@@ -49,28 +50,26 @@
 }
 
 .content-wrapper figure {
-  display: block;
-  margin: 1em 0px;
+
+    display: block;
+    float: left;
+    margin-top: 0px;
+    margin-right: 12px;
+    margin-left:12px;
   a {
     display: block;
   }
   @include desktop {
     float: left;
     margin-top: 0px;
-
     margin-right: 12px;
+    margin-left:0;
   }
 }
 
-/*.content-wrapper img{
-  width:100%;
-  height:100%;
-  float:left;
-
-}*/
 
 figure {
-  margin: 1em 0px;
+    margin: 1em 0px;
   a {
     display: block;
   }
@@ -81,10 +80,10 @@ figure {
 }
 
 #post-title {
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  border: solid 2px #3F3B43;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: solid 2px #8C8D91;
 
   a {
     text-decoration: none;
@@ -96,8 +95,8 @@ figure {
 }
 
 .post-content {
-  padding-top: 40px;
-  @include desktop {
+   padding-top: 40px;
+   @include desktop {
     margin-right: 40px;
   }
 }
@@ -107,80 +106,60 @@ figure {
     width: 100%;
     height: 100%;
   }
-  padding: 5px 23px 25px 23px;
-  &:nth-child(odd) {
+    padding: 60px 23px 25px 23px;
+    &:nth-child(odd) {
     background-color: #DEE2E5;
   }
   @include desktop {
-    padding: 5px 23px 0px 23px;
+    padding: 60px 23px 0px 23px;
     @include clearfix();
   }
 
 }
 
 .post-date, .post-auteur {
-  font-size: 16px;
+   font-size: 16px;
 }
 
-.post-meta_single {
-  @include desktop {
-    float: right;
-    margin-right: 10px;
-  }
 
-}
 
 .post-suite {
-  text-decoration: none;
-  float: right;
-  @include desktop {
+    text-decoration: none;
+    float: right;
+    @include desktop {
     margin: 16px
   }
 
 }
 
-// .zoom-gallery img{
-
-//   width: 30%;
-//   margin: 5px;
-
-// }
-// .zoom-gallery li{
-
-//   list-style: none;
-// }
-
-.joueur-wrapper {
-  @include container();
-
-}
 
 h4 {
-  padding: 0px;
-  margin: 0px;
+    padding: 0px;
+    margin: 0px;
 
 }
 
 .sidebar {
-  margin-top: 40px;
-  @include clearfix();
-  @include desktop {
+    margin-top: 40px;
+    @include clearfix();
+    @include desktop {
     float: left;
     padding: 0px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 3px;
   }
 }
 
 .sidebar-wrapper1, .sidebar-wrapper2 {
-  float: left;
-  text-align: center;
+    float: left;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   a {
     text-decoration: none;
     color: #000000;
   }
   h4 {
-    margin: 20px 0px 15px 0px;
+    margin: 20px 0px 20px 0px;
   }
   @include desktop {
     width: 100%;
@@ -188,9 +167,9 @@ h4 {
 }
 
 .sidebar-wrapper1 {
-  background-color: #3A393B;
-  padding: 5px 8px 5px 8px;
-  margin-left: 10px;
+    background-color: #3A393B;
+    padding: 0px 0px 5px 0px;
+    margin-left: 20px;
 
   h4 {
     color: white;
@@ -200,7 +179,7 @@ h4 {
     color: white;
   }
   @include desktop {
-    padding: 5px 35px 5px 35px;
+    padding: 5px 30px 5px 35px;
     background-color: #FFF;
     margin-left: 0px;
     h4 {
@@ -216,9 +195,9 @@ h4 {
 }
 
 .sidebar-wrapper2 {
-  padding-left: 23px;
-  padding: 5px 20px 5px 20px;
-  @include desktop {
+    padding-left: 23px;
+    padding: 5px 20px 5px 20px;
+    @include desktop {
     padding: 5px 20px 40px 20px;
     h4 {
       font-size: 17px;
@@ -228,39 +207,40 @@ h4 {
 }
 
 .pagination {
-  display: block;
-  background-color: #DADADA;
-  @include container();
+    display: block;
+    background-color: #DADADA;
+    @include container();
 }
 
 .pagination-prev, .pagination-next {
-  display: inline-block;
-  text-align: center;
-  background-color: #C1C1C1;
-  padding: 30px;
-  min-width: 50%;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Archivo Narrow", sans-serif;
-  color: #fff;
+    display: inline-block;
+    text-align: center;
+    background-color: #C1C1C1;
+    padding: 30px;
+    min-width: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Archivo Narrow", sans-serif;
+    color: #fff;
 }
 
 .demande-info h1 {
-  font-size: 19px;
-  text-align: center;
-  background: white;
-  padding: 20px;
-  margin-top: 0;
-  color: #919191;
-  border: solid 2px #242424;
-  font-family: "Archivo Narrow", sans-serif;
+    font-size: 19px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    margin-top: 0;
+    color: #919191;
+    border: solid 2px #242424;
+    font-family: "Archivo Narrow", sans-serif;
 }
 
 input {
-  display: block;
-  width: 100%;
-  padding: 20px;
-  margin-top: 1em;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 1em;
+    border: 2px #ccc solid;
 }
 
 fieldset {
@@ -268,17 +248,119 @@ fieldset {
 }
 
 textarea {
-  display: block;
-  width: 100%;
-  margin-top: 1em;
-  min-height: 125px;
-  border-style: inset;
-  border: 1px inset;
+    display: block;
+    width: 100%;
+    padding:20px;
+    margin-top: 1em;
+    min-height: 125px;
+    border-style: inset;
+    border: 2px #ccc solid;
 }
 
 .wpcf7-form p {
 
-  padding: 0px;
+    padding: 0px;
+}
+
+.wpcf7-submit{
+    border: 2px #787878 solid;
+    transition:0.3s all;
+    &:hover{
+    background-color: #2E6291;
+    color:#fff;
+    text-transform:uppercase;
+
+
+
+  }
+
+}
+
+#widget_sidebar{
+
+
+}
+.flesh{
+    display:none;
+@include desktop {
+    display:block;
+    background:url(img/flesh.svg);
+    width:40px;
+    height:40px;
+    position:fixed;
+    bottom: 32px;
+    right:10px;
+    z-index:5;
+    opacity:0;
+    transition: opacity 0.3s ease-in-out;
+
+   }
+}
+
+
+//*tableau*//
+table{
+  width:100%;
+}
+
+tr{
+
+  &:hover{
+
+   border-bottom: 1px solid #CBCBCB;
+
+  }
+}
+.disc li{
+  list-style:none;
+}
+
+
+
+.planning{
+
+  width:100%;
+  background: rgba(224, 118, 29, 0.3);
+  font-family: $typo;
+}
+.alignleft , .p-image-381{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 2);
+  margin-bottom: 67px;
+
+}
+iframe{
+  max-width:250px;
+  margin-top: 50px;
+  margin-left: 15px;
+  width: 100%;
+  height: 100%;
+  @include desktop{
+    max-width:315px;
+
+  }
+}
+
+table th { font-weight: bold; }
+table td, table th { padding: 9px 10px; text-align: left; }
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  
+  table.responsive { margin-bottom: 0; }
+  
+  .pinned { position: absolute; left: 0; top: 0; background: #fff; width: 35%; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
+  .pinned table { border-right: none; border-left: none; width: 100%; }
+  .pinned table th, .pinned table td { white-space: nowrap; }
+  .pinned td:last-child { border-bottom: 0; }
+  
+  div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border-right: 1px solid #ccc; }
+  div.table-wrapper div.scrollable { margin-left: 35%; }
+  div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }  
+  
+  table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+  table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+  
+  
 }
 
 

@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <main class="main">
-<h1 class="main-title"><?php echo the_title(); ?></h1>
+<h1 class="main-title subheader"><?php echo the_title(); ?></h1>
 
     
 
@@ -9,7 +9,7 @@
   <div class="content-wrapper">
       
       <?php while(have_posts()):the_post(); ?>
-            <h2 id="post-title">
+            <h2 id="post-title" class="subheader">
             <a href="#"><?php the_title(); ?></a>
             </h2>
                       <figure>

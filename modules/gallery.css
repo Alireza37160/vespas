@@ -1,0 +1,10 @@
+.th {
+  border: 3px solid #dddddd;
+  border-radius: 4px;
+  transition: 0.3s all;
+  width: 100%;
+}
+.th:hover {
+  border: 3px solid #4DB6DD;
+  border-radius: 4px;
+}
